@@ -187,7 +187,7 @@ public class MainActivity extends ListActivity {
                     int occupancy = ((JSONObject) message).getInt(Constants.JSON_OCCUPANCY);
                     if (occupancy == 0) {
                         showToast("User is not online!");
-                        //return;
+                        return;
                     }
                     JSONObject jsonCall = new JSONObject();
                     jsonCall.put(Constants.JSON_CALL_USER, username);
